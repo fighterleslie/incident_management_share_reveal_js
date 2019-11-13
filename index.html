@@ -131,10 +131,17 @@
           <h2>PagerDuty - 告警去重和分组</h2>
           <ol>
             <li>字段去重(dedup_key)</li>
-            <li><a href="https://support.pagerduty.com/docs/intelligent-alert-grouping">智能分组</li>
+            <li><a href="https://support.pagerduty.com/docs/intelligent-alert-grouping">智能分组</a></li>
           </ol>
         </section>
 
+        <section>
+          <h2>PagerDuty - 通知方式及扩展</h2>
+          <ul>
+            <li>支持的通知方式：email, SMS, phone, push notification，以及webhook</li>
+            <li>通过 webhook 支持 custom incident actions</li>
+          </ul>
+        </section>
 			</div>
 
 		</div>
@@ -148,7 +155,8 @@
 				controls: true,
 				progress: true,
 				center: true,
-				hash: true,
+        hash: true,
+        slideNumber: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
