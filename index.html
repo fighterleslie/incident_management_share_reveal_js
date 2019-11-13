@@ -200,8 +200,31 @@
         <section>
           <h2>Opsgenie - 创建告警流程</h2>
           <p>
-            <img src="assets/0a5960c-alert-creation-flow.png" alt="create">
+            <img src="assets/0a5960c-alert-creation-flow.png" alt="create" height="60%", width="60%">
           </p>
+        </section>
+
+        <section data-markdown>
+          ## Cabot
+            - https://github.com/arachnys/cabot
+            - 开源，不活跃, 2019 年之后基本没有更新
+            - 基于 Python, Django REST Framework
+            - 也是有 services 的概念
+            - 只有 Alerts 的概念，没有 Incident 的概念
+            - 支持告警认领，多种通知方式
+            - 跟 SaaS 产品差距较大
+            - [可以将生成的告警接入 PagerDuty](https://github.com/Affirm/cabot-alert-pagerduty)
+        </section>
+
+        <section data-markdown>
+          ## Openduty
+
+            - https://github.com/ustream/openduty
+            - 开源，出于 archived 状态
+            - 2017年之后基本没有更新
+            - 基于 Python, Django REST Framework
+            - 数据模型与 PagerDuty 比较类似
+            - 有 service, incident, event_log(alert)的概念
         </section>
 
 			</div>
