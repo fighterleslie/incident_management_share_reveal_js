@@ -142,6 +142,68 @@
             <li>通过 webhook 支持 custom incident actions</li>
           </ul>
         </section>
+        <section data-markdown>
+          ## VictorOps
+
+            - SaaS, 按人按月订阅，注册后可以免费试用14天
+            - 没有免费版
+            - 知名用户: NS1, Malwarebytes
+            - 2018年被 Splunk 收购
+            - 文档: https://help.victorops.com/
+
+        </section>
+
+        <section>
+          <h2>VictorOps</h2>
+          <ul>
+            <li>没有 service 的概念，但是有 team 的概念，支持把不同的告警分发给不同的 team</li>
+            <li>其它概念与 PagerDuty 类似，也是以 incident 为处理核心</li>
+            <li>entity_id 相同的 alerts 聚集为一个 incident</li>
+          </ul>
+
+        </section>
+
+        <section>
+          <h2>VictorOps - 告警流程</h2>
+          <p>
+            <img src="assets/victorops-incident-flow.png" alt="victorops">
+          </p>
+        </section>
+
+        <section>
+          <h2>VictorOps - 告警去重</h2>
+          <ul>
+            <li>只能按照字段去重</li>
+          </ul>
+        </section>
+
+        <section data-markdown>
+          ## Opsgenie
+
+            - SaaS, 按人按月订阅，注册后可以免费试用14天
+            - 有免费版，5人以下免费
+            - 知名用户: The Washington Post, bitly, EBSCO
+            - Atlassian 公司 2018 年收购
+            - 文档: https://docs.opsgenie.com/docs/welcome
+        </section>
+
+        <section>
+          <h2>Opsgenie</h2>
+          <ul>
+            <li>核心是 alert，没有 incident 的概念</li>
+            <li>企业版引入了 service 和 incident 的概念</li>
+            <li>对于 incident 的理解是故障，特殊的告警</li>
+            <li>只能按照字段去重</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Opsgenie - 创建告警流程</h2>
+          <p>
+            <img src="assets/0a5960c-alert-creation-flow.png" alt="create">
+          </p>
+        </section>
+
 			</div>
 
 		</div>
