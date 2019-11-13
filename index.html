@@ -45,7 +45,7 @@
         <section>
           <h1>告警管理工具调研</h3>
           <p>张雪松</p>
-          <p>2019-11-13</p>
+          <p>2019-11-14</p>
         </section>
 
         <section>
@@ -220,11 +220,60 @@
           ## Openduty
 
             - https://github.com/ustream/openduty
-            - 开源，出于 archived 状态
+            - 开源，处于 archived 状态
             - 2017年之后基本没有更新
             - 基于 Python, Django REST Framework
             - 数据模型与 PagerDuty 比较类似
             - 有 service, incident, event_log(alert)的概念
+            - 代码可以参考
+        </section>
+
+        <section data-markdown>
+          ## Cyphon
+
+            - https://github.com/controlscanmdr/cyphon
+            - 开源，比较活跃
+            - 基于 Python, Django REST Framework
+            - 针对安全事件，而不是监控告警
+            - 是一个专业的数据分析和处理平台，在该平台生成告警，而不是将告警汇总
+        </section>
+
+        <section>
+          <h2>Cyphon</h2>
+          <p>
+            <img src="assets/Cyphon_No_Logo-01.jpg" alt="cyphon">
+          </p>
+
+        </section>
+
+        <section data-markdown>
+          ## Alerta
+
+            - https://github.com/alerta/alerta
+            - https://github.com/alerta/alerta-contrib
+            - Guardian 开源
+            - 基于 Python, Flask
+            - 官方的定位是监控系统
+            - 专注做告警的汇总、去重、关联、抑制、可视化
+            - 支持 plugin 机制
+        </section>
+
+        <section data-markdown>
+          ## Prometheus Alert Manager
+
+            - https://github.com/prometheus/alertmanager
+            - https://prometheus.io/docs/alerting/alertmanager/
+            - 专注做告警的去重、分组、抑制、静默、路由
+            - PagerDuty, Opsgenie 等SaaS 产品，都支持与 Prometheus Alert Manager 集成
+        </section>
+
+        <section data-markdown>
+          <h2>后续建议</h2>
+          <ul>
+            <li>明确需求</li>
+            <li>明确告警的处理流程</li>
+            <li>开源产品推荐研究 Alerta 和 Prometheus Alert Manager，但它们的弱点是通知方式</li>
+          </ul>
         </section>
 
 			</div>
